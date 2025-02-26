@@ -44,6 +44,17 @@
             transform: translate(-50%, -50%);
         }
     }
+
+    &.btn-outline {
+        background-color: transparent;
+        color: $primary;
+        border: 2px solid $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: $background-color;
+        }
+    }
 }
 
 @keyframes spin {

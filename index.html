@@ -27,5 +27,37 @@
             <div class="col col-12 col-sm-6 col-md-4 col-lg-3">Colonne 12</div>
         </div>
     </div>
+
+    <div class="spacerDiv">
+        <button class="btn" onclick="showAlert('Ceci est une alerte de succès !', 'alert-success')">Afficher Alerte de Succès</button>
+        <button class="btn" onclick="showAlert('Ceci est une alerte d\'erreur !', 'alert-danger')">Afficher Alerte d'Erreur</button>
+        <button class="btn" onclick="showAlert('Ceci est une alerte d\'information !', 'alert-info')">Afficher Alerte d'Information</button>
+        <button class="btn" onclick="showAlert('Ceci est une alerte d\'avertissement !', 'alert-warning')">Afficher Alerte d'Avertissement</button>
+        <button class="btn loading" onclick="showLoading()">Charger</button>
+    </div>
+
+    <!-- Alertes -->
+    <div id="alerts-container" class="spacerDiv"></div>
+
+   
+    <div class="modal hidden spacerDiv" id="myModal">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <h2 class="secondary">Titre de la Modal</h2>
+            <p class="secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button class="btn" onclick="closeModal()">Fermer</button>
+        </div>
+    </div>
+
+    <button class="btn spacerDiv" onclick="openModal()">Ouvrir Modal</button>
+
+  
+    <div class="card card-secondary spacerDiv">
+        <h3 class="secondary">Titre de la Carte</h3>
+        <p class="secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus maiores saepe perferendis, sunt asperiores ut voluptates. Quo consequuntur ea iure! Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <button class="btn">Action</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html> 

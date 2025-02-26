@@ -17,14 +17,13 @@
     }
 
     .modal-content {
-        background-color: $background-color; 
+        background-color: $warning; 
         border-radius: 8px; 
         padding: 2rem; 
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
         animation: fadeIn 0.5s ease; 
     }
 }
-
 
 @keyframes fadeIn {
     from {
@@ -35,4 +34,10 @@
         opacity: 1; 
         transform: translateY(0); 
     }
+}
+
+.modal-content .close {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #ffffff;
 }
