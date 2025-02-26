@@ -1,0 +1,12 @@
+$background-color: #121212;
+$text-color: #ffffff;
+$primary: #bb86fc;
+$secondary: #03dac6;
+$success: #03dac6;
+$danger: #cf6679;
+$warning: #ffb74d;
+
+body[data-theme="dark"] {
+    background-color: $background-color;
+    color: $text-color;
+}

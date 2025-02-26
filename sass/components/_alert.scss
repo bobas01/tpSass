@@ -1,0 +1,48 @@
+@use '../base/variables' as *;
+
+.alert {
+    padding: 1rem; 
+    border-radius: 4px; 
+    margin-bottom: 1rem; 
+    animation: fadeIn 0.5s ease, fadeOut 0.5s ease 3s; 
+
+    &.alert-success {
+        background-color: $success; 
+        color: $background-color; 
+    }
+
+    &.alert-danger {
+        background-color: $danger; 
+        color: $background-color; 
+    }
+
+    &.alert-warning {
+        background-color: $warning; 
+        color: $background-color; 
+    }
+
+    &.alert-info {
+        background-color: $secondary; 
+        color: $background-color; 
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+        transform: translateY(-10px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1; 
+    }
+    to {
+        opacity: 0; 
+    }
+}
